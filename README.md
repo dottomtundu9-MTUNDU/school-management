@@ -172,6 +172,205 @@ smart-school-ERP-API/
 │
 └── README.md
 ```
+FULL STRUCTURE PROJ
+smart-school-ERP/
+│
+├── backend/                         # FastAPI Backend
+│   │
+│   ├── app/
+│   │   ├── main.py
+│   │   │
+│   │   ├── core/
+│   │   │   ├── config.py
+│   │   │   ├── database.py
+│   │   │   ├── security.py
+│   │   │   └── dependencies.py
+│   │   │
+│   │   ├── api/
+│   │   │   └── v1/
+│   │   │       ├── auth.py
+│   │   │       ├── students.py
+│   │   │       ├── teachers.py
+│   │   │       ├── finance.py
+│   │   │       └── reports.py
+│   │   │
+│   │   ├── models/
+│   │   │   ├── user.py
+│   │   │   ├── student.py
+│   │   │   ├── teacher.py
+│   │   │   ├── academic.py
+│   │   │   └── finance.py
+│   │   │
+│   │   ├── schemas/
+│   │   ├── services/
+│   │   ├── repositories/
+│   │   ├── utils/
+│   │   └── middleware/
+│   │
+│   ├── alembic/
+│   ├── tests/
+│   ├── requirements.txt
+│   ├── Dockerfile
+│   └── .env
+│
+│
+├── frontend/                        # React + TypeScript
+│   │
+│   ├── public/
+│   │
+│   ├── src/
+│   │   │
+│   │   ├── app/
+│   │   │   ├── router.tsx
+│   │   │   ├── providers.tsx
+│   │   │   └── store.ts
+│   │   │
+│   │   ├── components/
+│   │   │   ├── ui/
+│   │   │   ├── layout/
+│   │   │   ├── charts/
+│   │   │   └── common/
+│   │   │
+│   │   ├── features/
+│   │   │   │
+│   │   │   ├── auth/
+│   │   │   ├── dashboard/
+│   │   │   ├── students/
+│   │   │   ├── teachers/
+│   │   │   ├── academics/
+│   │   │   ├── attendance/
+│   │   │   ├── examinations/
+│   │   │   ├── finance/
+│   │   │   ├── reports/
+│   │   │   └── notifications/
+│   │   │
+│   │   ├── services/
+│   │   │   ├── api.ts
+│   │   │   └── axios.ts
+│   │   │
+│   │   ├── hooks/
+│   │   ├── types/
+│   │   ├── utils/
+│   │   ├── styles/
+│   │   │
+│   │   ├── App.tsx
+│   │   └── main.tsx
+│   │
+│   ├── package.json
+│   ├── vite.config.ts
+│   └── Dockerfile
+│
+│
+├── database/
+│   ├── migrations/
+│   └── seeds/
+│
+├── docker-compose.yml
+│
+├── docs/
+│   ├── API.md
+│   ├── DATABASE.md
+│   └── ARCHITECTURE.md
+│
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   │
+│   ├── workflows/
+│   │   └── ci.yml
+│   │
+│   └── PULL_REQUEST_TEMPLATE.md
+│
+├── README.md
+├── LICENSE
+└── .gitignore
+
+REQUIREMENTS
+# ==============================
+# FastAPI Core
+# ==============================
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+
+
+# ==============================
+# Database
+# ==============================
+sqlalchemy==2.0.36
+alembic==1.14.0
+psycopg2-binary==2.9.10
+
+
+# ==============================
+# Data Validation & Settings
+# ==============================
+pydantic==2.10.4
+pydantic-settings==2.7.0
+
+
+# ==============================
+# Authentication & Security
+# ==============================
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.20
+
+
+# ==============================
+# Environment Management
+# ==============================
+python-dotenv==1.0.1
+
+
+# ==============================
+# Email Services
+# ==============================
+email-validator==2.2.0
+
+
+# ==============================
+# Background Tasks & Cache
+# ==============================
+redis==5.2.1
+celery==5.4.0
+
+
+# ==============================
+# File Handling & Reports
+# ==============================
+openpyxl==3.1.5
+pandas==2.2.3
+reportlab==4.2.5
+
+
+# ==============================
+# API Utilities
+# ==============================
+fastapi-limiter==0.1.6
+python-dateutil==2.9.0.post0
+
+
+# ==============================
+# Logging
+# ==============================
+loguru==0.7.3
+
+
+# ==============================
+# Testing
+# ==============================
+pytest==8.3.4
+pytest-asyncio==0.25.0
+httpx==0.28.1
+
+
+# ==============================
+# Production Server
+# ==============================
+gunicorn==23.0.0
+
+
 ## 🗄 Core Modules
 
 ### User Management
