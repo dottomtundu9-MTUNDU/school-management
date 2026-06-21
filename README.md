@@ -172,46 +172,6 @@ smart-school-ERP-API/
 │
 └── README.md
 ```
-frontend/src/
-├── assets/                 # Picha, nembo (logos), na mafaili ya fonts.
-├── core/                   # Miundo ya kiufundi (Global configurations)
-│   ├── api/                # Axios instances na API interceptors (kwa ajili ya kupitisha JWT tokens).
-│   ├── config/             # Environment variables na constants za frontend.
-│   └── utils/              # Helper functions (mfano: fomati za tarehe, hesabu za fedha).
-├── context/                # State management ya mfumo mzima (Global States)
-│   └── AuthContext.tsx     # Inatunza data ya user aliyelogin (Token, Role, Email) na ku-broadcast pande zote.
-├── routes/                 # Mifumo ya kuruka kutoka ukurasa mmoja kwenda mwingine
-│   ├── AppRoutes.tsx       # Faili kuu linaloandika barabara zote za kurukia.
-│   └── ProtectedRoute.tsx  # Kilinzi kinachozuia wasiologin au wenye role mbaya wasiingie kwenye ukurasa fulani.
-├── components/             # Vipande vidogo vidogo vya UI vinavyoweza kutumika mara nyingi (Reusable UI)
-│   ├── shared/             # Vipande vinavyoonekana kila sehemu
-│   │   ├── Sidebar.tsx     # Menu ya pembeni inayobadilika kulingana na Role ya mtumiaji.
-│   │   ├── Header.tsx      # Sehemu ya juu inayouonyesha jina la shule na profile ya user.
-│   │   ├── Table.tsx       # Data grid ya kawaida kwa ajili ya kuonyesha list mbalimbali.
-│   │   └── Button.tsx      # Kitufe maalum chenye rangi za shule.
-│   ├── auth/               # Vipande vya upande wa Login pekee.
-│   ├── students/           # Vipande vya upande wa Wanafunzi (mfano: `RegistrationWizard.tsx`).
-│   ├── finance/            # Vipande vya upande wa Kifedha (mfano: `InvoiceCard.tsx`).
-│   └── academics/          # Vipande vya upande wa Masomo na Mitihani (mfano: `AttendanceSheet.tsx`).
-├── views/                  # Kurasa kamili zinazomfanyia user kazi (Pages/Screens)
-│   ├── auth/
-│   │   └── LoginView.tsx   # Ukurasa mzima wa kuingizia neno la siri na barua pepe.
-│   ├── dashboard/
-│   │   └── ExecutiveDashboardView.tsx # Ukurasa mkuu wa Dashboard wenye Chati za mapato na idadi ya wanafunzi.
-│   ├── students/
-│   │   ├── StudentListView.tsx        # Ukurasa unaoonyesha jedwali la wanafunzi wote na pagination.
-│   │   └── StudentRegisterView.tsx    # Ukurasa wa fomu ya kusajili mwanafunzi mpya.
-│   ├── finance/
-│   │   ├── InvoicesView.tsx           # Ukurasa wa kudhibiti Ankara za shule.
-│   │   └── LedgerView.tsx             # Ukurasa wa kuona hesabu za double-entry ledger.
-│   └── academics/
-│       ├── TimetableView.tsx          # Ukurasa wa kuona ratiba ya wiki.
-│       └── MarksEntryView.tsx         # Ukurasa wa walimu kujaza alama za mitihani kwa wingi.
-├── App.tsx                 # Faili kuu la React linalofunga Application nzima.
-└── main.tsx                # Faili linaloanzisha (bootstrap) React injini kwenye browser.
-
----
-
 ## 🗄 Core Modules
 
 ### User Management
