@@ -3,3 +3,5 @@ uvicorn
 sqlalchemy
 pydantic-settings
 asyncpg
+email-validator
+psycopg2-binary
