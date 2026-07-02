@@ -5,3 +5,7 @@ pydantic-settings
 asyncpg
 email-validator
 psycopg2-binary
+passlib[bcrypt]
+pyjwt
+python-jose
+python-multipart
